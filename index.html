@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management App</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+  <div class="container">
+    <!-- Application Title -->
+    <h1>Task Manager</h1>
+
+    <!-- Form to add a new task -->
+    <form id="taskForm">
+      <!-- Input field for task name -->
+      <input type="text" id="taskName" placeholder="Task Name" required>
+      <!-- Textarea for task description -->
+      <textarea id="taskDescription" placeholder="Task Description"></textarea>
+      <!-- Input field for due date -->
+      <input type="date" id="taskDueDate" required>
+      <!-- Button to submit the form and add a task -->
+      <button type="submit">Add Task</button>
+    </form>
+
+    <!-- Filter and Sort buttons -->
+    <div class="controls">
+      <div class="filters">
+        <button id="filterAll">All</button>
+        <button id="filterCompleted">Completed</button>
+        <button id="filterPending">Pending</button>
+      </div>
+      <button id="sortByDueDate">Sort by Due Date</button>
+    </div>
+
+    <!-- List to display tasks -->
+    <ul id="taskList"></ul>
+  </div>
+
+  <!-- Link to the JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

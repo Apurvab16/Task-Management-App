@@ -1,0 +1,152 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    background-color: #f0f2f5; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height */
+  }
+  
+  /* Container for the application */
+  .container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background: #ffffff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Application title */
+  h1 {
+    text-align: center;
+    color: #333; /* Dark gray text */
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between form elements */
+  }
+  
+  /* Input and textarea styling */
+  input, textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #007bff; /* Blue border on focus */
+  }
+  
+  /* Button styling */
+  button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Filter and Sort buttons container */
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .filters {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .filters button, #sortByDueDate {
+    flex: 1; /* Equal width for all buttons */
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark gray text */
+    border: 1px solid #ddd; /* Light border */
+  }
+  
+  .filters button:hover, #sortByDueDate:hover {
+    background-color: #e9ecef; /* Slightly darker gray on hover */
+  }
+  
+  /* Task list styling */
+  #taskList {
+    margin-top: 20px;
+  }
+  
+  /* Individual task item styling */
+  li {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  li:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+  }
+  
+  /* Styling for completed tasks */
+  li.completed {
+    text-decoration: line-through;
+    color: #888; /* Gray out completed tasks */
+    background-color: #e9ecef; /* Slightly darker gray background */
+  }
+  
+  /* Buttons inside task items */
+  li button {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-left: 10px;
+    border-radius: 6px;
+    background-color: #dc3545; /* Red for delete button */
+    color: #fff;
+  }
+  
+  li button:nth-child(2) {
+    background-color: #28a745; /* Green for complete/pending button */
+  }
+  
+  li button:last-child {
+    background-color: #ffc107; /* Yellow for edit button */
+  }
+  
+  li button:hover {
+    opacity: 0.9; /* Slight fade on hover */
+  }
+  
+  /* Due date styling */
+  li small {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666;
+  }
